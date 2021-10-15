@@ -10,6 +10,7 @@
 */
 
 //CODE HERE
+let gitDefinition = 'Git is a program used to keep track of files/folders. Version control being a large aspect.'
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -18,6 +19,7 @@
 */
 
 //CODE HERE
+let gitHubDefinition = 'GitHub is a website that hosts your file/folders/versions so that they can be shared with others. An online presence for Git, in a way.'
 
 //////////////////PROBLEMS 3 - 8////////////////////
 /*
@@ -34,7 +36,10 @@
 */
 
 //CODE HERE
-
+let init = {
+    description: 'Initializes the current folder for use as a git repository. First step.',
+    code: 'git init'
+}
 //////////////////PROBLEM 4////////////////////
 /*
     Create an object called 'clone' with 'description' and 'code' properties 
@@ -42,6 +47,10 @@
 */
 
 //CODE HERE
+let clone = {
+    description: 'Takes the current repository and copies it to a new folder',
+    code: 'git clone'
+}
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -50,6 +59,10 @@
 */
 
 //CODE HERE
+let status = {
+    description: 'Returns the status of the files in the repository. Red File Name = not added; Green File Name = Added. Also shows how many commits ahead of the GitHub repository',
+    code: 'git status'
+}
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -58,6 +71,10 @@
 */
 
 //CODE HERE
+let add = {
+    description: 'Adds a file from the folder to the git repository. Needs to be done before file can be committed.',
+    code: 'git add <file name or ".">'
+}
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -66,7 +83,10 @@
 */
 
 //CODE HERE
-
+let commit = {
+    description: 'Creates a version of all added files in current folder.',
+    code: 'git commit <-m "commit message">'
+}
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -75,3 +95,10 @@
 */
 
 //CODE HERE
+let push = {
+    description: 'sends the commited file versions to GitHub',
+    code: 'git push'
+}
+
+let gitObjects = [init, clone, status, add, commit, push];
+console.log(gitObjects);
